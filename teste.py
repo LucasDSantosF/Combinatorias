@@ -6,7 +6,7 @@ num = 5
 
 # print(Arranjo(num, 1))
 
-# print(CombinatoriaSimples(7, 4))
+# print(CombinacaoSimples(7, 4))
 
 # print(Comb_Complementar(7, 5))
 

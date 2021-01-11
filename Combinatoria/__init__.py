@@ -1,4 +1,7 @@
 def Permuta(num):
+    """
+    param num: número de elementos distintos.
+    """
     if num > 0:
         soma = num
         for i in range(1, num):
@@ -14,13 +17,21 @@ def Permuta(num):
 
 
 def Arranjo(n, r):
+    """
+    param n : númetro de elementos distintos. \n
+    param r : grupo de elementos do conjunto n.
+    """
     div = n-r
     resposta = Permuta(n)/ Permuta(div)
 
     return resposta
 
 
-def CombinatoriaSimples(n, r):
+def CombinacaoSimples(n, r):
+    """
+    param n : número de elemento distintos. \n
+    param r : número de elemento tomados r a r do conjunto n.
+    """
     dividendo = Permuta(n)/Permuta(r)
     divisor = n-r
 
@@ -30,18 +41,30 @@ def CombinatoriaSimples(n, r):
 
 
 def Comb_Complementar(n, p):
+    """
+    param n : número de elemento distintos. \n
+    param p : número de elemento tomados n-p a n-p do conjunto n.
+    """
     r = n - p
 
     return CombinatoriaSimples(n, r)
 
 
 def Kaplansky(n, p):
+    """
+    param n : número de elemento distintos. \n
+    param p : número de elemento tomados p a p do conjunto n.
+    """
     num = n-p+1
 
     return CombinatoriaSimples(num, p)
 
 
 def InteirosPositivos(m, n):
+    """
+    param m : valor da final da equação. \n
+    param n : número de variáveis da equação.
+    """
     m = m-1
     n = n-1
 
@@ -49,6 +72,10 @@ def InteirosPositivos(m, n):
 
 
 def Nao_Negativos(m, n):
+    """
+    param m : valor da final da equação. \n
+    param n : número de variáveis da equação.
+    """
     m = m+n-1
     n = n-1
 
@@ -56,6 +83,10 @@ def Nao_Negativos(m, n):
 
 
 def Comb_Repeticao(n, p):
+    """
+    param n : número de elemento distintos. \n
+    param p : número de elemento tomados p a p do conjunto n.
+    """
     r = n-1
     n = n+p-1
 
@@ -63,6 +94,10 @@ def Comb_Repeticao(n, p):
 
 
 def Permuta_Repeticao(n, lista):
+    """
+    param n : número de elemento distintos. \n
+    param lista : lista com o número de elementos de cada condição.
+    """
     soma = 1
     for i in range(0, len(lista)):
         r = lista[i]
@@ -74,17 +109,27 @@ def Permuta_Repeticao(n, lista):
 
 
 def Arranjo_Repeticao(m, p):
+    """
+    param m : número de elemetos distintos. \n
+    param p : número de vezes que m é repetido.
+    """
 
     return m**p
 
 
 def Permuta_Circular(n):
+    """
+    param n : número de elementos distintos.
+    """
     n = n-1
 
     return Permuta(n)
 
 
 def Permuta_Caotica(n):
+    """
+    param n : número de elementos distintos.
+    """
 
     lista = []
 
