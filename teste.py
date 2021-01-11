@@ -25,3 +25,5 @@ num = 5
 # print(Permuta_Circular(5))
 
 # print(Permuta_Caotica(5))
+
+# print(Permuta(-5))

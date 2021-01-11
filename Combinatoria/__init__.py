@@ -1,10 +1,14 @@
 def Permuta(num):
-    if num != 0:
+    if num > 0:
         soma = num
         for i in range(1, num):
             soma = soma*i
     else:
-        soma = 1 
+        if num == 0:
+            soma = 1
+        else:
+            return f"\033[;1m [Erro] \033[0;0m Só é possivel permutação de numeros positivos."
+
     
     return soma
 
