@@ -2,9 +2,9 @@ from Combinatoria import *
 
 num = 5
 
-# print(Permuta(num))
+#print(Permutacao(num))
 
-# print(Arranjo(num, 1))
+# print(Arranjo(num,))
 
 # print(CombinacaoSimples(7, 4))
 
@@ -12,18 +12,16 @@ num = 5
 
 # print(Kaplansky(5, 2))
 
-# print(InteirosPositivos(4, 2))
+# print(InteirosPositivos(5, 3))
 
 # print(Nao_Negativos(4, 2))
 
 # print(Comb_Repeticao(2,4))
 
-# print(Permuta_Repeticao(7, [3,2,2]))
+# print(Permutacao_Repeticao(7, [5, -2, 2]))
 
-# print(Arranjo_Repeticao(26,2))
+# print(Arranjo_Repeticao(10,3))
 
-# print(Permuta_Circular(5))
+# print(Permutacao_Circular(5))
 
-# print(Permuta_Caotica(5))
-
-# print(Permuta(-5))
+# print(Permutacao_Caotica(5))
